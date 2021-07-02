@@ -1,0 +1,197 @@
+* {margin:0; padding:0;}
+body {
+  padding: 2em;
+  background-color: black;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+container {
+  width: 100%;
+  border: none;
+  
+}
+#main #title{
+  padding: 1em 0;
+}
+#main .image-parallax {
+   max-width: 100%;
+    
+   height: auto;
+}
+
+
+#main h2 {
+  margin-top: 1.5em;
+  text-align: center;
+  font-size: 2rem;
+  background-color: white;
+}
+#main section {
+  margin-top: 1.5em;
+  padding-top: 2em;
+  width: 100%;
+  background-color: #F4F4F4;
+  border: none;
+  padding-bottom: 2em;
+}
+#main section .personnel-band  {
+  width: 75%;
+  margin: 0 auto 3em auto;
+}
+#main section .personnel-band .personnels  {
+  border: none;
+  height: 700px;
+  margin-bottom: 0em;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  border: none;
+}
+
+#main section .personnel-band .personnels .personnel-info {
+  width: 46%;
+  align-self :center;
+  border: none;
+}
+#main section .personnel-band .personnel-info p {
+  line-height: 1.6;
+  margin-bottom: 7em;
+  margin-top: 0.5em;
+  text-align: justify;
+}
+#main section .personnel-band .personnels .img-personnel {
+ width: 50%;
+ min-height: auto;
+  border:none;
+  padding: 0;
+  border: none;
+  
+}
+#main section .personnel-band .personnels .img-personnel img {
+    height: 100%;
+    width: 100%;
+}
+#main section .personnel-band .personnels:nth-of-type(2) .img-personnel {
+  order: 2;
+}
+#main section .personnel-band .personnels:nth-of-type(4) .img-personnel {
+  order: 2;
+}
+#main section .personnel-band .personnels:nth-of-type(6) .img-personnel {
+  order: 2;
+}
+#main section #tribute-link{
+  text-decoration: none;
+  color: blue;
+}
+#main section #tribute-link:hover{
+  text-decoration: none;
+  color: black;
+}
+#main section #img-div {
+  border: none;
+  position: relative;
+  top: 20px;
+  margin: 0 auto;
+  width: 75%;
+}
+#main section #img-div .upper-image{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+}
+/* #main section #img-div .upper-image img {
+ width: 300px;
+} */
+#main section #img-div #image{
+  width: 100%;
+}
+#main section #img-div #img-caption {
+  border: none;
+  text-align: center;
+  padding: 1.5em 0;
+}
+#main section #img-div #img-caption p{
+  font-size: 1.5rem;
+}
+
+section #tribute-info {
+  border: none;
+  width: 75%;
+  margin: 2em auto 1.5em auto;
+  text-align: left;
+}
+section #tribute-info ol  {
+  margin-bottom: 0.5em;
+  list-style-type: none;
+}
+section #tribute-info ol li  {
+  margin-top: 1em;
+}
+footer{
+  width:100%;
+  background-color: black;
+  text-align: center;
+  color: white
+}
+@media only screen and (max-width: 768px) {
+  #main section .personnel-band .personnels  {
+  flex-direction: column;
+  height: auto;
+}
+#main section .personnel-band .personnels .img-personnel img {
+  height: auto;
+   
+}
+  #main section .personnel-band .personnels .img-personnel  {
+  width: 100%;
+  padding: 0;
+}
+    #main section .personnel-band .personnels:nth-of-type(2) .img-personnel {
+  order: 0;
+}
+  #main section .personnel-band .personnels:nth-of-type(4) .img-personnel {
+  order: 0;
+}
+  #main section .personnel-band .personnels:nth-of-type(6) .img-personnel {
+  order: 0;
+}
+   #main section .personnel-band .personnels .personnel-info  {
+  width: 100%;
+  padding: 0;
+}
+
+}
+@media only screen and (min-width: 1600px){
+  
+  #main section .personnel-band .personnels:nth-of-type(1) .img-personnel img{
+    float: right;
+  }
+  #main section .personnel-band .personnels:nth-of-type(3) .img-personnel img{
+    float: right;
+  }
+  #main section .personnel-band .personnels:nth-of-type(5) .img-personnel img{
+    float: right;
+  }
+  #main section .personnel-band .personnels .img-personnel img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+  #main section .personnel-band .personnel-info p {
+    line-height: 1.6;
+    margin-bottom: 7em;
+    margin-top: 0.5em;
+    text-align: justify;
+    font-size: 1.25rem;
+  }
+  #main section .personnel-band .personnel-info h4 {
+    font-size: 1.5rem;
+  }
+  section #tribute-info {
+   font-size: 1.2rem;
+  }
+}
